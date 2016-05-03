@@ -1,9 +1,7 @@
 install:
-        - wget http://www.cmake.org/files/v3.1/cmake-3.1.0-Linux-x86_64.tar.gz
-        - tar -xvz cmake-3.1.0-Linux-x86_64.tar.gz
         - mkdir -p build
         - cd build
-        - ./cmake-3.1.0-Linux-x86_64/bin/cmake -DCMAKE_CXX_COMPILER=`which g++` -DBUILD_TESTS=ON ..
+        - cmake -DCMAKE_CXX_COMPILER=`which g++` -DBUILD_TESTS=ON ..
 
 script:
-        ./cmake-3.1.0-Linux-x86_64/bin/ctest
+        - ctest
