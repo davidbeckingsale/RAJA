@@ -1,3 +1,4 @@
+language: cpp
 install:
         - mkdir -p build
         - cd build
