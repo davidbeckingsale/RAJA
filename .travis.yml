@@ -1,6 +1,7 @@
+sudo: required
 language: cpp
 install:
-        - apt-get install cmake
+        - sudo apt-get install cmake
         - mkdir -p build
         - cd build
         - cmake -DCMAKE_CXX_COMPILER=`which g++` -DBUILD_TESTS=ON ..
