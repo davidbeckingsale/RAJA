@@ -7,7 +7,7 @@ install:
         - sudo apt-get install cmake gcc-4.8 -y
         - mkdir -p build
         - cd build
-        - cmake -DCMAKE_CXX_COMPILER=`which g++` -DBUILD_TESTS=ON ..
+        - cmake -DCMAKE_CXX_COMPILER=`which g++-4.8` -DBUILD_TESTS=ON ..
         - make
 
 script:
