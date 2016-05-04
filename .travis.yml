@@ -7,6 +7,4 @@ install:
         - cd build
         - cmake -DCMAKE_CXX_COMPILER=`which clang++` -DCMAKE_CXX_FLAGS="-std=c++11" -DBUILD_TESTS=ON ..
         - make VERBOSE=1
-
-script:
         - ctest
