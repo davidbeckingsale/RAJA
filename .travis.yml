@@ -4,7 +4,7 @@ env: TRAVIS_CXX_COMPILER=g++-4.8
 install:
         - mkdir -p build
         - cd build
-        - cmake -DCMAKE_CXX_COMPILER=`which clang` -DCMAKE_CXX_FLAGS="-std=c++11" -DBUILD_TESTS=ON ..
+        - cmake -DCMAKE_CXX_COMPILER=`which clang` -DCMAKE_CXX_FLAGS="-std=c++11 -lm -fdefine-sized-deallocation" -DBUILD_TESTS=ON ..
         - make VERBOSE=1
 
 script:
