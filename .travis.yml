@@ -2,9 +2,6 @@ sudo: required
 language: cpp
 env: TRAVIS_CXX_COMPILER=g++-4.8
 install:
-        - sudo add-apt-repository ppa:ubuntu-toolchain-r/test -y
-        - sudo apt-get update -q
-        - g++-4.8 --version
         - mkdir -p build
         - cd build
         - cmake -DCMAKE_CXX_COMPILER=`which clang` -DCMAKE_CXX_FLAGS="-std=c++11" -DBUILD_TESTS=ON ..
