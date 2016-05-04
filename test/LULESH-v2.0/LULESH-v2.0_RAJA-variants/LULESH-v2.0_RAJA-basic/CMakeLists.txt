@@ -63,7 +63,7 @@ elseif (RAJA_USE_OPENMP)
 endif()
 
 add_test(LULESH2.0-basic
-        ./lulesh2.0basic.exe)
+        lulesh2.0basic.exe)
 set_tests_properties(LULESH2.0-basic
         PROPERTIES
         PASS_REGULAR_EXPRESSION "932")
