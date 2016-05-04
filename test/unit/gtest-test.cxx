@@ -16,5 +16,5 @@ TEST(PiTest, CheckValue) {
       piSum += 4.0/(1.0 + x*x) ;
   } ) ;
 
-  ASSERT_NEAR(double(piSum)/numBins, 100, 0.1);
+  ASSERT_NEAR(double(piSum)/numBins, 3.14, 0.1);
 }
