@@ -8,7 +8,7 @@ install:
         - mkdir -p build
         - cd build
         - cmake -DCMAKE_CXX_COMPILER=`which g++-4.8` -DCMAKE_CXX_FLAGS="-std=c++11" -DBUILD_TESTS=ON ..
-        - make
+        - make VERBOSE=1
 
 script:
         - ctest
